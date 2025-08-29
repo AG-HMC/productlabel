@@ -1,0 +1,55 @@
+<mvc:View controllerName="productlabel.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form = "sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}" showHeader="false">
+        <VBox class="sapUiSmallMargin">
+
+    <form:SimpleForm
+      editable="true"
+      layout="ResponsiveGridLayout"
+      labelSpanXL="4"
+      labelSpanL="4"
+      labelSpanM="4"
+      labelSpanS="12"
+      adjustLabelSpan="false"
+      emptySpanXL="0"
+      emptySpanL="0"
+      emptySpanM="0"
+      columnsXL="1"
+      columnsL="1"
+      columnsM="1"
+      class="sapUiSmallMargin">
+
+      <Label text="{i18n>Product}" />
+      <Input placeholder="{i18n>Enter} {i18n>Product}" width="50%" showValueHelp="true"/>
+
+      <Label text="{i18n>ProductDescription}" />
+      <Input placeholder="{i18n>Enter} {i18n>ProductDescription}" width="50%" enabled="false"/>
+
+      <Label text="{i18n>SerialNumber}" />
+      <Input placeholder="{i18n>Enter} {i18n>SerialNumber}" width="50%" showValueHelp="true"/>
+
+      <Label text="{i18n>MPN}" />
+      <Input placeholder="{i18n>Enter} {i18n>MPN}" width="50%" showValueHelp="true"/>
+
+      <Label text="{i18n>StockType}" />
+      <Input placeholder="{i18n>Enter} {i18n>StockType}" width="50%" showValueHelp="true"/>
+
+      <Label text="{i18n>Size}" />
+      <Input placeholder="{i18n>Enter} {i18n>Size}" width="50%" />
+
+      <Label text="{i18n>Printer}" />
+      <Input placeholder="{i18n>Enter} {i18n>Printer}" width="50%" />
+
+    </form:SimpleForm>
+
+    <!-- Action Buttons -->
+    <HBox justifyContent="Center" class="sapUiSmallMarginTop">
+      <Button text="{i18n>PrintPreview}" type="Emphasized" press="onPrintPreview"/>
+      <Button text="{i18n>Print}" type="Emphasized" press="onPrint" class="sapUiSmallMarginBegin"/>
+    </HBox>
+    
+  </VBox>
+    </Page>
+</mvc:View>
